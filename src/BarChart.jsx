@@ -1,34 +1,37 @@
 import React from "react";
-import { Bar } from "react-chartjs-2";
 
 const BarChart = () => {
-  const data = {
-    labels: ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5"],
-    datasets: [
-      {
-        label: "Bar Chart Example",
-        data: [10, 20, 15, 25, 30],
-        backgroundColor: "rgba(75,192,192,0.2)",
-        borderColor: "rgba(75,192,192,1)",
-        borderWidth: 1,
-      },
-    ],
-  };
-
-  const options = {
-    scales: {
-      x: {
-        type: "linear",
-        position: "bottom",
-      },
-      y: {
-        type: "linear",
-        position: "left",
-      },
-    },
-  };
-
-  <Bar data={data} options={options} />;
+  return (
+    <>
+      <div className="barcontainer">
+        <div className="barcontainerheader">Bar Graph</div>
+        <div className="bar" style="height:12%">
+          bar
+          <div className="barlabel">label</div>
+        </div>
+        <div className="bar" style="height: 16%">
+          bar
+          <div className="barlabel">label</div>
+        </div>
+        <div className="bar" style="height: 22%">
+          bar
+          <div className="barlabel">label</div>
+        </div>
+        <div className="bar" style="height:30%">
+          bar
+          <div className="barlabel">label </div>
+        </div>
+        <div className="bar" style="height:45%">
+          bar
+          <div className="barlabel">label</div>
+        </div>
+        <div className="bar" style="height:80%">
+          bar
+          <div className="barlabel">label</div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default BarChart;

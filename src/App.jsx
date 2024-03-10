@@ -1,5 +1,6 @@
 import BarChart from "./BarChart";
 import React from 'react';
+import './BarChart.css'
 
 function App() {
   return (
